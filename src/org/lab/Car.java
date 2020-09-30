@@ -74,7 +74,7 @@ public class Car {
                 "id=" + id +
                 ", brand='" + brand + '\'' +
                 ", production Year=" + productionYear +
-                ", price=$" + price +
+                ", price=" + price +
                 ", color='" + color + '\'' +
                 ", registration Number=" + registrationNumber +
                 '}';
