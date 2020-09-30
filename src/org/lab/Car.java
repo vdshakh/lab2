@@ -67,4 +67,16 @@ public class Car {
     public void setRegistrationNumber(int registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", brand='" + brand + '\'' +
+                ", production Year=" + productionYear +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                ", registration Number=" + registrationNumber +
+                '}';
+    }
 }
