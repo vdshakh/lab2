@@ -14,7 +14,7 @@ public class CarFilter {
         return result;
     }
 
-    public static List<Car> filterByBrandAndYear(List<Car> cars, String brand, int year){
+    public static List<Car> filterByBrandAndExploitationDuration(List<Car> cars, String brand, int year){
         List<Car> result = new ArrayList<>();
         for(Car vehicle: cars){
             if((2020 - vehicle.getProductionYear() > year) && vehicle.getBrand().equalsIgnoreCase(brand))
@@ -23,7 +23,7 @@ public class CarFilter {
         return result;
     }
 
-    public static List<Car> filterByYearAndPrice(List<Car> cars, int year, double price){
+    public static List<Car> filterByProductionYearAndPrice(List<Car> cars, int year, double price){
         return cars.stream()
                 .filter(car -> (car.getPrice() > price && car.getProductionYear() == year))
                 .collect(Collectors.toList());
